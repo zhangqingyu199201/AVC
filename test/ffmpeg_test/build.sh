@@ -1,0 +1,2 @@
+ffmpegPath=../../thirdparty/ffmpeg
+g++ -std=c++11 main.cpp  -o process   -I$ffmpegPath/include     -L$ffmpegPath/lib   -lavformat -lavdevice -lavcodec -lavfilter -lavutil -lswresample -lswscale -lz -lbz2 -liconv -framework AudioToolbox -framework VideoToolbox  -framework CoreVideo  -framework CoreAudio  -framework CoreMedia -framework CoreFoundation -framework Security
